@@ -17,9 +17,11 @@ function getOneParam(key) {
 }
 
 function getClickUrl() {
-	let domain = getOneParam('domain')
+	// let domain = getOneParam('domain')
 	
-	return `https://${domain}/click`
+	// return `https://${domain}/click`
+	
+	return "https://appnowsite.appnow.site/click"
 	
 }
 
