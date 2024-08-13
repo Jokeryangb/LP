@@ -1,8 +1,3 @@
-// function getClickUrl() {
-	
-// 	return "https://appvmstore.appvm.store/click"
-// }
-
 function getOneParam(key) {
 	var query = window.location.search.substring(1);
 	var vars = query.split("&");
@@ -26,6 +21,7 @@ function getClickUrl() {
 }
 
 function toOffer() {
-	const clickUrl = getClickUrl()
+	// const clickUrl = getClickUrl()
+	const clickurl = "https://appnowsite.appnow.site/click"
 	window.open(clickUrl)
 }
