@@ -24,5 +24,5 @@ function toOffer() {
 	// const clickUrl = getClickUrl()
 	// const clickurl = "https://appnowsite.appnow.site/click"
 	const clickurl = "https://www.baidu.com"
-	window.open(clickUrl)
+	window.open(clickurl)
 }
