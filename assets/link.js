@@ -1,5 +1,13 @@
+// function getClickUrl() {
+	
+// 	return "https://appvmstore.appvm.store/click"
+// }
+
 function getClickUrl() {
-	return "https://appvmstore.appvm.store/click"
+	let domain = getOneParam('domain')
+	
+	return `${domain}/click`
+	
 }
 
 function toOffer() {
