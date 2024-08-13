@@ -19,7 +19,7 @@ function getOneParam(key) {
 function getClickUrl() {
 	let domain = getOneParam('domain')
 	
-	return `${domain}/click`
+	return `https://${domain}/click`
 	
 }
 
