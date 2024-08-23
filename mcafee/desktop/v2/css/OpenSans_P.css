@@ -1,0 +1,21 @@
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans.woff') format('woff');
+    font-display: swap;
+}
+
+html,
+body,
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: OpenSans, "Segoe UI", Tahoma, sans-serif;
+}
+
+.OpenSans {
+    font-family: OpenSans, "Segoe UI", Tahoma, sans-serif;
+}

