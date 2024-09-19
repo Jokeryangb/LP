@@ -312,7 +312,7 @@ const translations = {
 		t6: "Havaitut tietoturvariskit yhteensä:",
 		t7: "Haavoittuvuuksia ratkaistu yhteensä:",
 		t8: "Huomiota vaativat turvallisuusriskit yhteensä:",
-		t9: "Tietokoneesi on viruksen saastuttama. Puhdistus on erittäin suositeltavaa."
+		t9: "Tietokoneesi on viruksen saastuttama. Puhdistus on erittäin suositeltavaa.",
 		t10: "Aloita puhdistus",
 		t11: "Uhka havaittu!",
 		t12: "Suuri riski",
