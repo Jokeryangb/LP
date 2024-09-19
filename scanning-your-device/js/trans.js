@@ -303,6 +303,25 @@ const translations = {
 		t16: "Bedreigingsacties uitgevoerd: 1",
 		t17: "Middelgroot risico",
 	},
+	fi: {
+		t1: "Skannaa laitteesi",
+		t2: "Skannattu",
+		t3: "Tiedostot",
+		t4: "Tulosten yhteenveto",
+		t5: "Skannatut kohteet yhteensä:",
+		t6: "Havaitut tietoturvariskit yhteensä:",
+		t7: "Haavoittuvuuksia ratkaistu yhteensä:",
+		t8: "Huomiota vaativat turvallisuusriskit yhteensä:",
+		t9: "Tietokoneesi on viruksen saastuttama. Puhdistus on erittäin suositeltavaa."
+		t10: "Aloita puhdistus",
+		t11: "Uhka havaittu!",
+		t12: "Suuri riski",
+		t13: "Alkuperä",
+		t14: "Ei saatavilla",
+		t15: "Toiminta",
+		t16: "Uhkatoimenpiteet: 1",
+		t17: "Keskitasoinen riski",
+	},
 }
 
 function setLanguage(lang) {
