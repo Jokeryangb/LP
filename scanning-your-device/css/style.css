@@ -619,7 +619,7 @@ input {
 @media (max-width: 480px) {
   .popup {
     width: calc(100% - 30px);
-    left: 15px;
+    left: 50vw;
     margin-left: 0;
   }
 }
