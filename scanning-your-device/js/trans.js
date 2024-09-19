@@ -284,6 +284,25 @@ const translations = {
 		t16: "Ações de ameaça tomadas: 1",
 		t17: "Risco médio",
 	},
+	nl: {
+		t1: "Scan uw apparaat",
+		t2: "Gescand",
+		t3: "Bestanden",
+		t4: "Samenvatting resultaten",
+		t5: "Totaal aantal gescande items:",
+		t6: "Totaal aantal gedetecteerde beveiligingsrisico's:",
+		t7: "Totaal aantal opgeloste kwetsbaarheden:",
+		t8: "Totaal aantal beveiligingsrisico's dat aandacht vereist:",
+		t9: "Uw computer is geïnfecteerd met virussen. Opschonen wordt ten zeerste aanbevolen.",
+		t10: "Start met opschonen",
+		t11: "Bedreiging gedetecteerd!",
+		t12: "Hoog risico",
+		t13: "Oorsprong",
+		t14: "Niet beschikbaar",
+		t15: "Activiteit",
+		t16: "Bedreigingsacties uitgevoerd: 1",
+		t17: "Middelgroot risico",
+	},
 }
 
 function setLanguage(lang) {
