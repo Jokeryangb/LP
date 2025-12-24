@@ -1,0 +1,90 @@
+/* BASE STYLES */
+html,
+body {
+	scroll-behavior: smooth;
+}
+
+input {
+	-webkit-user-select: text;
+}
+
+/* FOOTER STYLES */
+footer.footer {
+	width: 100%;
+	display: block;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	background-color: black;
+	font-family: inherit;
+}
+
+footer.footer p {
+	color: white;
+	font-size: 16px;
+	padding-bottom: 0;
+}
+
+footer.footer img {
+	margin: 0 !important;
+}
+
+footer.footer button,
+footer.footer a {
+	display: inline-block;
+	padding: 6px;
+	font-size: 14px;
+	outline: none;
+	border: none;
+	color: white !important;
+	text-decoration: underline;
+	background-color: transparent;
+	transition: 0.2s all;
+	cursor: pointer;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+footer.footer a:hover,
+footer.footer button:hover {
+	opacity: 0.5;
+	text-decoration: underline;
+}
+
+/* ticker */
+
+.ticker {
+	position: relative;
+	height: 40px;
+	padding: 10px 0;
+	background-color: red;
+	overflow-x: hidden;
+}
+
+.ticker__text {
+	position: absolute;
+	top: 6px;
+	right: -528px;
+	width: 528px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	white-space: nowrap;
+	animation: ticker linear 20s infinite;
+}
+
+@keyframes ticker {
+	0% {
+		right: -528px;
+	}
+	100% {
+		right: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.ticker__text {
+		animation: ticker linear 15s infinite;
+	}
+}
